@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practice</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-
-<div class="container">
-<!-- form title -->
-    <div class="form-title-container">
-        <div class="form-title">
-            <h3>Create an account</h3>
+    <section class="form__container">
+        <div class="form__main">
+            <div class="form__title">
+                <div class="form__title--big">Log in to Uxcel</div>
+                <div class="form__title--small">
+                    Don't have an account? <a href="#">Sign Up</a>
+                </div>
+            </div>
+            <div class="form__signin">
+                <div class="form__signin--google">
+                    <img src="assets/images/google-logo.png" alt="Google" />
+                    <span>Sign in with Google</span>
+                </div>
+                <div class="form__signin--facebook">
+                    <img src="assets/images/facebook-logo.png" alt="Facebook" />
+                </div>
+            </div>
+            <div class="form__or">
+                <span>or</span>
+            </div>
+            <form class="form__login">
+                <div class="form__login--item">
+                    <label for="userEmail">Email</label>
+                    <input type="text" name="email" id="login-email" />
+                </div>
+                <div class="form__login--item">
+                    <label for="userPassword">Password</label>
+                    <input type="password" name="password" id="login-password" />
+                </div>
+                <div class="form__login--item">
+                    <button type="submit">Log In</button>
+                </div>
+                <div class="form__login--item">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
         </div>
-    </div>
-<!-- form fields -->
-    <div class="form">
-        <div class="field">
-            <label for="">User name</label>
-            <input type="text">
-        </div>
-        <div class="field">
-            <label for="">Phone</label>
-            <input type="number">
-        </div>
-        <div class="field">
-            <label for="">Birthday</label>
-            <input type="date">
-        </div>
-    </div>
-<!-- form messages -->
-    <div class="form-message">
-        <div class="message">
-            <p>This is a random message about creating on this website.</p>
-        </div>
-    </div>
-<!-- button area -->
-    <div class="form-controls">
-        <button class="btn cencel">Cancel</button>
-        <button class="btn submit">Submite</button>
-    </div>
-
-</div>
-
+    </section>
 </body>
+
 </html>
